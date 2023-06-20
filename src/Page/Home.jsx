@@ -78,7 +78,7 @@ const Home = () => {
         </div>
 
         <div className=' max-w-xl mx-auto px-2 md:px-0  my-10'>
-          {todo.map((item, index) => {
+          {todo?.map((item, index) => {
             return (
               <>
                 <div className=' text-center  text-black ' key={index}>
