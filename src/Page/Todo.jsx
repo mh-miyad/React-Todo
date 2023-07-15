@@ -50,11 +50,12 @@ const Todo = () => {
     const deletedItem = todo.filter((t) => t.id !== id);
 
     setTodo(deletedItem);
-    toast.success("Todo deleted");
+    toast.error("Todo deleted");
   };
 
   const removeAll = () => {
     setTodo([]);
+    toast.error(" All Todo Is Remove ");
   };
   return (
     <div>
